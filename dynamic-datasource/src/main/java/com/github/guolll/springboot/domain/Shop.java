@@ -1,12 +1,21 @@
 package com.github.guolll.springboot.domain;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel("商品信息")
 public class Shop {
+
+    @ApiModelProperty("唯一编号")
     private Integer uuid;
 
+    @ApiModelProperty("球员")
     private String buyer;
 
+    @ApiModelProperty("姓名")
     private String name;
 
+    @ApiModelProperty("编号")
     private Integer num;
 
     public Integer getUuid() {
